@@ -3,5 +3,5 @@
   hosts: all
   remote_user: pi
   tasks:
-    - synchronize: src=./package.json dest=~/
-    - synchronize: src=src/ dest=~/sandbox
+    #- synchronize: src=./package.json dest=~/sandbox/PIR-A500BP
+    - copy: src=src/ dest=~/sandbox/PIR-A500BP/src
